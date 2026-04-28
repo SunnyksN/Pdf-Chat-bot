@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PDF Chatbot</title>
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>PDF Chatbot</h1>
+
+<div class="upload-box">
+<input type="file"
+id="pdfs"
+multiple
+accept=".pdf">
+
+<button onclick="uploadPDFs()">
+Upload PDFs
+</button>
+
+<div id="file-preview" class="file-preview" style="display: none;"></div>
+</div>
+
+
+<div id="chat-box"></div>
+
+
+<div class="chat-input">
+<textarea
+id="question"
+placeholder="Ask from your PDFs... (Press Enter to send, Shift+Enter for new line)"
+rows="1"></textarea>
+
+<button onclick="askQuestion()">
+Send
+</button>
+</div>
+
+</div>
+
+<script src="static/script.js"></script>
+
+</body>
+</html>
