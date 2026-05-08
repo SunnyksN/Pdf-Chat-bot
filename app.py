@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import os
-
+## please install requirements.txt
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
